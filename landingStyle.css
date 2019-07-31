@@ -1,0 +1,69 @@
+html, body 
+{
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: url("landingBackground.jpg");
+}
+
+.myBody
+{
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header 
+{
+  margin: 0;
+}
+
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #2443ba;
+  min-width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.topNav 
+{
+   height: 7%;
+   width: 100%; 
+   position: absolute; 
+   text-align: left;
+   z-index: 1; 
+   top: 0; 
+   left: 0;
+   padding-top: 20px;
+   padding-left: 10px;
+   display: inline-block;
+   font-size: 25px;
+   /* background: rgba(0, 0, 0, 0.6); */
+}
+
+.topNav a 
+{
+    text-decoration: underline;
+    font-size: 25px;
+    color: #FFF;
+}

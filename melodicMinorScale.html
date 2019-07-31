@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head> 
+        <title>Melodic Minor Scales</title> 
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="allCalculations.js"></script> 
+        <link href="musicStyle.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div class = "topNav">
+			<div class= "dropdown">
+			    <span>Projects</span>
+			    <div class = "dropdown-content">
+				   <a href = "index.html">Home</a><br>
+				   <a href = "musicIndex.html">MusicUI</a> <br>
+				   <a href = "bowlingIndex.html">BowlingUI</a> <br>
+				   <a href = "mediaIndex.html">MediaUI</a> <br>
+			</div>
+		 </div> &nbsp; &nbsp; &nbsp;
+			<div class= "dropdown">
+			    <span>Pick a Scale</span>
+			    <div class = "dropdown-content">
+				   <a href = "majorScale.html">Major Scales</a> <br>
+				   <a href = "melodicMinorScale.html">Melodic Minor Scales</a> <br>
+				   <a href = "harmonicMinorScale.html">Harmonic Minor Scales</a> <br>
+				   <a href = "naturalMinorScale.html">Natural Minor Scales</a> <br>
+				   <a href = "pentatonicMinorBluesScale.html">Pentatonic Minor Blues Scales</a>
+			    </div>
+			</div>
+		   &nbsp; &nbsp; &nbsp; <a href="findYourRoot.html">Find Which Scale To Play</a>
+		   &nbsp; &nbsp; &nbsp; <a href="findChordNotes.html">Find Notes of a Chord</a>
+		 </div>
+		
+		<div class = "myBody">
+			<br><br><br><br>
+			<h1>Melodic Minor Scales</h1>
+			<br>
+			<h3>Select Your Root Note</h3>
+			<br><br><br>
+		
+			<form>
+				<input type= "radio" id = "root1" value = "A" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> A &nbsp; &nbsp; 	
+				<input type= "radio" id = "root2" value = "A#" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> A# &nbsp; &nbsp; 
+				<input type= "radio" id = "root3" value = "B" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> B &nbsp; &nbsp; 
+				<input type= "radio" id = "root4" value = "C" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> C &nbsp; &nbsp; 
+				<input type= "radio" id = "root5" value = "C#" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> C# &nbsp; &nbsp; 
+				<input type= "radio" id = "root6" value = "D" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> D &nbsp; &nbsp; 
+				<input type= "radio" id = "root7" value = "D#" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> D# &nbsp; &nbsp; 
+				<input type= "radio" id = "root8" value = "E" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> E &nbsp; &nbsp; 
+				<input type= "radio" id = "root9" value = "F" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> F &nbsp; &nbsp; 
+				<input type= "radio" id = "root10" value = "F#" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> F# &nbsp; &nbsp; 
+				<input type= "radio" id = "root11" value = "G" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> G &nbsp; &nbsp; 
+				<input type= "radio" id = "root12" value = "G#" name = "root" 
+				onclick = "getScalePattern(this.value, 'melodic')"/> G# &nbsp; &nbsp;
+				<br><br>
+				<p id = "result" style = "font-size: 24pt"></p>
+				<br><br>
+			</form>
+		</div>
+	</body>
+</html>

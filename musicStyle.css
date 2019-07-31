@@ -1,0 +1,123 @@
+html, body 
+{
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: url("musicBackground.jpg");
+}
+
+h1 
+{
+   text-align: center;
+   font-size: 18pt;
+   color: #FFFFFF;
+   margin-bottom: 0px;
+}
+
+h3
+{
+   text-align: center;
+   font-size: 14pt;
+   color: #fff79e;
+   margin-bottom: -30px;
+}
+
+form
+{
+  text-align: center;
+  font-size: 14pt;
+  color: #fff79e;
+  margin-bottom: -30px;
+}
+
+.myBody
+{
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.right 
+{
+   padding-top: 7%;
+   color: #559efe;
+}
+
+.footer
+{
+	background-color: #223788;
+	height: 70px;
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+}
+
+.header 
+{
+  margin: 0;
+}
+
+.chordButtons
+{
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #fefad5;
+}
+
+.chordButtons table
+{
+    width: 100%;
+}
+
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #2443ba;
+  min-width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.topNav 
+{
+   height: 7%;
+   width: 100%; 
+   position: absolute; 
+   text-align: left;
+   z-index: 1; 
+   top: 0; 
+   left: 0;
+   padding-top: 20px;
+   padding-left: 10px;
+   display: inline-block;
+   font-size: 25px;
+   /* background: rgba(0, 0, 0, 0.6); */
+}
+
+.topNav a 
+{
+    text-decoration: underline;
+    font-size: 25px;
+    color: #FFF;
+}
