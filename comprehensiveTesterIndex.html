@@ -5,6 +5,7 @@
 	    <title>Music Scales UI</title> 
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <link href="comprehensiveTester.css" rel="stylesheet" type="text/css">
+        <script src="comprehensiveTesterValidations.js"> </script>
     </head>
     
     <body>
@@ -21,8 +22,27 @@
         </div>
         <div class = "myBody">
             <br><br><br><br>
-            <h1>Welcome to the Testing Grounds. Here, you can use test automation tools
-            to see how HTML elements react and are referenced within testing.</h1>
+            <h3>Welcome to the Testing Grounds. Here, you can use test automation tools
+            to see how HTML elements react and are referenced within testing.</h3>
+
+<!-- 
+            TODO: add forms, radio buttons, checkboxes, submit buttons, downloads,
+            tables, clear buttons, links to other pages, dropdowns, pop up messages,
+            reactive text appearances, resizeable text areas, validation on text, etc -->
+
+            <br><br><br>
+
+            <form>
+                Name: &nbsp; <input type= "text" id = "text1" value = "yourName" name = "textbox1">
+                &nbsp; &nbsp;
+                City:  &nbsp; <input type= "text" id = "text2" value = "yourCity" name = "textbox2">
+                &nbsp; &nbsp;
+                Phone:  &nbsp; <input type= "text" id = "text3" value = "yourNumber" name = "textbox3">
+                &nbsp; &nbsp;
+                <br><br>
+                <input type = "button" onclick = "validatePhone()" value = "Submit"/>
+                <input type = "button" onclick = "location.reload()" value = "Reset"/>
+            </form>
         </div>
     </body>
 </html>
