@@ -1,4 +1,3 @@
-use strict;
 
 function validatePhone(text3)
 {
@@ -33,7 +32,7 @@ function returnTextSleepType(value)
 
 }
 
-function popupPersonality(this.value)
+function popupPersonality(value)
 {
 
 }
