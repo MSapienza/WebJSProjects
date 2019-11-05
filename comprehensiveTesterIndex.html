@@ -20,10 +20,10 @@
                 </div>
             </div> &nbsp; &nbsp; &nbsp;
         </div>
-        <div class = "myBody">
+        <div>
             <br><br><br><br>
-            <h3>Welcome to the Testing Grounds. Here, you can use test automation tools
-            to see how HTML elements react and are referenced within testing.</h3>
+            <h1>Welcome to the Testing Grounds. Use this page with test automation tools
+            to see how HTML elements are referenced within testing.</h1>
 
 <!-- 
             TODO: add forms, radio buttons, checkboxes, submit buttons, downloads,
@@ -43,6 +43,48 @@
                 <input type = "button" onclick = "validatePhone()" value = "Submit"/>
                 <input type = "button" onclick = "location.reload()" value = "Reset"/>
             </form>
-        </div>
+
+            <br><br><br>
+
+            <div class = "chordButtons">    
+                <form>
+                    <table>
+                        <tr>
+                            <th>What Kinda Person Are You?</th>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <select id = "chord1">
+                                    <option value = ""> No Personality Selected</option>
+                                    <option value = "Bold" > Bold </option> 
+                                    <option value = "Smart" > Smart </option> 
+                                    <option value = "Sexy" > Sexy </option> 
+                                    <option value = "Charismatic" > Charismatic </option> 
+                                    <option value = "Indecisive" > Indecisive </option> 
+                                    <option value = "Abrasive" > Abrasive </option> 
+                                </select>
+                            </td>
+                            </tr>	
+                    </table>
+                </form>
+                </div>
+            </div>
+
+            <br><br><br>
+			<h3>How do you Sleep?</h3>
+			<br><br><br>
+            <form>
+				<input type= "radio" id = "sleep1" value = "Deep Sleeper" name = "root" 
+				onclick = "returnTextSleepType(this.value)"/> Deep Sleeper &nbsp; &nbsp; 	
+				<input type= "radio" id = "sleep2" value = "Light Sleeper" name = "root" 
+				onclick = "returnTextSleepType(this.value)"/> Light Sleeper &nbsp; &nbsp; 
+				<input type= "radio" id = "sleep3" value = "Toss and Turning" name = "root" 
+				onclick = "returnTextSleepType(this.value)"/> Toss and Turning &nbsp; &nbsp; 
+				<input type= "radio" id = "sleep4" value = "Sleeptalker" name = "root" 
+				onclick = "returnTextSleepType(this.value)"/> Sleeptalker &nbsp; &nbsp; 
+				<br><br>
+				<p id = "result" style = "font-size: 24pt"></p>
+				<br><br>
+			</form>
     </body>
 </html>
