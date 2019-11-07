@@ -2,9 +2,7 @@
 function validatePhone(text3)
 {
      var validationMessage = "";
-
      document.getElementById("text3").innerHTML = text3;
-
 }
 
 function returnTextSleepType(value)
@@ -29,7 +27,6 @@ function returnTextSleepType(value)
      }
      document.getElementById("result").innerHTML = message;
      return message;
-
 }
 
 function popupPersonality(value)
