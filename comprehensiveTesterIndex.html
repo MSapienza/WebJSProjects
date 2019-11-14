@@ -20,7 +20,7 @@
                 </div>
             </div> &nbsp; &nbsp; &nbsp;
         </div>
-        <div>
+        <div class = "chordButtons"> 
             <br><br><br><br>
             <h1>Welcome to the Testing Grounds. Use this page with test automation tools
             to see how HTML elements are referenced within testing.</h1>
@@ -30,50 +30,38 @@
             tables, clear buttons, links to other pages, dropdowns, pop up messages,
             reactive text appearances, resizeable text areas, validation on text, etc -->
 
-            <br><br><br>
+            <br><br>
 
             <form>
-                Name: &nbsp; <input type= "text" id = "text1" value = "yourName" name = "textbox1">
+                Name: &nbsp; <input type= "text" id = "name" value = "yourName" name = "textbox1">
                 &nbsp; &nbsp;
-                City:  &nbsp; <input type= "text" id = "text2" value = "yourCity" name = "textbox2">
+                City:  &nbsp; <input type= "text" id = "city" value = "yourCity" name = "textbox2">
                 &nbsp; &nbsp;
-                Phone:  &nbsp; <input type= "text" id = "text3" value = "yourNumber" name = "textbox3">
+                Phone:  &nbsp; <input type= "text" id = "phone" value = "yourNumber" name = "textbox3">
                 &nbsp; &nbsp;
+                <p id = "result" style = "font-size: 24pt"></p>
                 <br><br>
-                <input type = "button" onclick = "validatePhone()" value = "Submit"/>
-                <input type = "button" onclick = "location.reload()" value = "Reset"/>
-            </form>
 
-            <br><br><br>
-
-            <div class = "chordButtons">    
-                <form>
-                    <table>
-                        <tr>
-                            <th>What Kinda Person Are You?</th>
-                        </tr>
-                        <tr>
-                            <td> 
-                                <select id = "chord1">
-                                    <option value = ""> No Personality Selected</option>
-                                    <option value = "Bold" > Bold </option> 
-                                    <option value = "Smart" > Smart </option> 
-                                    <option value = "Sexy" > Sexy </option> 
-                                    <option value = "Charismatic" > Charismatic </option> 
-                                    <option value = "Indecisive" > Indecisive </option> 
-                                    <option value = "Abrasive" > Abrasive </option> 
-                                </select>
-                            </td>
-                            </tr>	
-                    </table>
-                </form>
-                </div>
-            </div>
-
-            <br><br><br>
+                <table>
+                    <tr>
+                        <th>What Kinda Person Are You?</th>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <select id = "chord1">
+                                <option value = ""> No Personality Selected</option>
+                                <option value = "Bold" > Bold </option> 
+                                <option value = "Smart" > Smart </option> 
+                                <option value = "Sexy" > Sexy </option> 
+                                <option value = "Charismatic" > Charismatic </option> 
+                                <option value = "Indecisive" > Indecisive </option> 
+                                <option value = "Abrasive" > Abrasive </option> 
+                            </select>
+                        </td>
+                        </tr>	
+                </table>
 			<h3>How do you Sleep?</h3>
-			<br><br><br>
-            <form>
+			<br><br>
 				<input type= "radio" id = "sleep1" value = "Deep Sleeper" name = "root" 
 				onclick = "returnTextSleepType(this.value)"/> Deep Sleeper &nbsp; &nbsp; 	
 				<input type= "radio" id = "sleep2" value = "Light Sleeper" name = "root" 
@@ -83,8 +71,10 @@
 				<input type= "radio" id = "sleep4" value = "Sleeptalker" name = "root" 
 				onclick = "returnTextSleepType(this.value)"/> Sleeptalker &nbsp; &nbsp; 
 				<br><br>
-				<p id = "result" style = "font-size: 24pt"></p>
-				<br><br>
-			</form>
+				<p id = "result2" style = "font-size: 24pt"></p>
+                <input type = "button" onclick = "validateTestInput()" value = "Submit"/>
+                <input type = "button" onclick = "location.reload()" value = "Reset"/>
+            </form>
+        </div>
     </body>
 </html>
