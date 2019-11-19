@@ -25,11 +25,6 @@ function setTaxBracketInfo(NewTaxBracket)
 
 }
 
-
-//tax data in db 
-//table name should be tax_bracket_t;
-//columns: tax_state varchar (200), taxable_salary decimal, taxable_rate, updt_user_id, updt_dtm
-
 // con.connect(function(err) {
 //      if (err) throw err;
 //      con.query("SELECT * FROM customers", function (err, result, fields) {
