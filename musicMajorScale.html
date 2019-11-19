@@ -4,7 +4,7 @@
 	<head> 
 	    <title>Major Scales</title> 
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	    <script src="allCalculations.js"></script>
+	    <script src="musicCalculations.js"></script>
         <link href="musicStyle.css" rel="stylesheet" type="text/css">
 	</head>
 
@@ -22,49 +22,49 @@
 			<div class= "dropdown">
 			    <span>Pick a Scale</span>
 			    <div class = "dropdown-content">
-				   <a href = "majorScale.html">Major Scales</a> <br>
-				   <a href = "melodicMinorScale.html">Melodic Minor Scales</a> <br>
-				   <a href = "harmonicMinorScale.html">Harmonic Minor Scales</a> <br>
-				   <a href = "naturalMinorScale.html">Natural Minor Scales</a> <br>
-				   <a href = "pentatonicMinorBluesScale.html">Pentatonic Minor Blues Scales</a>
+				   <a href = "musicMajorScale.html">Major Scales</a> <br>
+				   <a href = "musicMelodicMinorScale.html">Melodic Minor Scales</a> <br>
+				   <a href = "musicHarmonicMinorScale.html">Harmonic Minor Scales</a> <br>
+				   <a href = "musicNaturalMinorScale.html">Natural Minor Scales</a> <br>
+				   <a href = "musicPentatonicMinorBluesScale.html">Pentatonic Minor Blues Scales</a>
 			    </div>
 			</div>
-		   &nbsp; &nbsp; &nbsp; <a href="findYourRoot.html">Find Which Scale To Play</a>
-		   &nbsp; &nbsp; &nbsp; <a href="findChordNotes.html">Find Notes of a Chord</a>
+		   &nbsp; &nbsp; &nbsp; <a href="musicFindYourRoot.html">Find Which Scale To Play</a>
+		   &nbsp; &nbsp; &nbsp; <a href="musicFindChordNotes.html">Find Notes of a Chord</a>
 		 </div>
 
 		<div class = "myBody">
 			<br><br><br><br>
-			<h1>Pentatonic Blues Scales</h1>
+			<h1>Major Scales</h1>
 			<br>
 			<h3>Select Your Root Note</h3>
 			<br><br><br>
 		
 			<form>
 				<input type= "radio" id = "root1" value = "A" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> A &nbsp; &nbsp; 	
+				onclick = "getScalePattern(this.value, 'major')"/> A &nbsp; &nbsp; 	
 				<input type= "radio" id = "root2" value = "A#" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> A# &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> A# &nbsp; &nbsp; 
 				<input type= "radio" id = "root3" value = "B" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> B &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> B &nbsp; &nbsp; 
 				<input type= "radio" id = "root4" value = "C" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> C &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> C &nbsp; &nbsp; 
 				<input type= "radio" id = "root5" value = "C#" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> C# &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> C# &nbsp; &nbsp; 
 				<input type= "radio" id = "root6" value = "D" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> D &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> D &nbsp; &nbsp; 
 				<input type= "radio" id = "root7" value = "D#" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> D# &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> D# &nbsp; &nbsp; 
 				<input type= "radio" id = "root8" value = "E" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> E &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> E &nbsp; &nbsp; 
 				<input type= "radio" id = "root9" value = "F" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> F &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> F &nbsp; &nbsp; 
 				<input type= "radio" id = "root10" value = "F#" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> F# &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> F# &nbsp; &nbsp; 
 				<input type= "radio" id = "root11" value = "G" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> G &nbsp; &nbsp; 
+				onclick = "getScalePattern(this.value, 'major')"/> G &nbsp; &nbsp; 
 				<input type= "radio" id = "root12" value = "G#" name = "root" 
-				onclick = "getScalePattern(this.value, 'pentatonic')"/> G# &nbsp; &nbsp;
+				onclick = "getScalePattern(this.value, 'major')"/> G# &nbsp; &nbsp;
 				<br><br>
 				<p id = "result" style = "font-size: 24pt"></p>
 				<br><br>
