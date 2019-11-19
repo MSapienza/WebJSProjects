@@ -62,18 +62,27 @@
                 </table>
 			<h3>How do you Sleep?</h3>
 			<br><br>
-				<input type= "radio" id = "sleep1" value = "Deep Sleeper" name = "root" 
-				onclick = "returnTextSleepType(this.value)"/> Deep Sleeper &nbsp; &nbsp; 	
-				<input type= "radio" id = "sleep2" value = "Light Sleeper" name = "root" 
-				onclick = "returnTextSleepType(this.value)"/> Light Sleeper &nbsp; &nbsp; 
-				<input type= "radio" id = "sleep3" value = "Toss and Turning" name = "root" 
-				onclick = "returnTextSleepType(this.value)"/> Toss and Turning &nbsp; &nbsp; 
-				<input type= "radio" id = "sleep4" value = "Sleeptalker" name = "root" 
-				onclick = "returnTextSleepType(this.value)"/> Sleeptalker &nbsp; &nbsp; 
-				<br><br>
-				<p id = "result2" style = "font-size: 24pt"></p>
-                <input type = "button" onclick = "validateTestInput()" value = "Submit"/>
-                <input type = "button" onclick = "location.reload()" value = "Reset"/>
+            <input type= "radio" id = "sleep1" value = "Deep Sleeper" name = "root" 
+            onclick = "returnTextSleepType(this.value)"/> Deep Sleeper &nbsp; &nbsp; 	
+            <input type= "radio" id = "sleep2" value = "Light Sleeper" name = "root" 
+            onclick = "returnTextSleepType(this.value)"/> Light Sleeper &nbsp; &nbsp; 
+            <input type= "radio" id = "sleep3" value = "Toss and Turning" name = "root" 
+            onclick = "returnTextSleepType(this.value)"/> Toss and Turning &nbsp; &nbsp; 
+            <input type= "radio" id = "sleep4" value = "Sleeptalker" name = "root" 
+            onclick = "returnTextSleepType(this.value)"/> Sleeptalker &nbsp; &nbsp; 
+            <br><br>
+            <p id = "result2" style = "font-size: 24pt"></p>
+            
+            <h3>What are your hobbies? (Select as many that apply to you)</h3>
+            <br><br>
+            <input type= "checkbox" id = "hobby1" value = "Video Games" name = "hobby"/> Video Games <br><br>
+            <input type= "checkbox" id = "hobby2" value = "Reading" name = "hobby"/> Reading <br><br>	
+            <input type= "checkbox" id = "hobby3" value = "Music" name = "hobby"/> Music <br><br>	
+            <input type= "checkbox" id = "hobby4" value = "Hiking" name = "hobby"/> Hiking <br><br>	
+            <input type= "checkbox" id = "hobby5" value = "Home Improvement" name = "hobby"/> Home Improvement <br><br>		
+            <p id = "result3" style = "font-size: 24pt"></p>
+            <input type = "button" onclick = "validateTestInput()" value = "Submit"/>
+            <input type = "button" onclick = "location.reload()" value = "Reset"/>
             </form>
         </div>
     </body>
