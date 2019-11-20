@@ -12,27 +12,6 @@ if($mysqli->connect_error) {
 $sql = "SELECT TAXABLE_SALARY_RANGE_START, TAXABLE_SALARY_RANGE_END, TAXABLE_RATE, ADDL_TAX 
 FROM TAX_BRACKET_T";
 
-// $stmt = $mysqli->prepare($sql);
-// $stmt->bind_param("brackets", $_GET['q']);
-// $stmt->execute();
-// $stmt->store_result();
-// $stmt->bind_result($salaryStart, $salaryEnd, $taxRate, $addlTax);
-// $stmt->fetch();
-// $stmt->close();
-
-// echo "<table>";
-// echo "<tr>";
-// echo "<th>Salary Start</th>";
-// echo "<td>" . $salaryStart . "</td>";
-// echo "<th>Salary End</th>";
-// echo "<td>" . $salaryEnd . "</td>";
-// echo "<th>Tax Rate</th>";
-// echo "<td>" . $taxRate . "</td>";
-// echo "<th>Additional Tax</th>";
-// echo "<td>" . $addlTax . "</td>";
-// echo "</tr>";
-// echo "</table>";
-
 if ($res = mysqli_query($conn, $sql)) { 
      if (mysqli_num_rows($res) > 0) { 
          echo "<table>"; 
@@ -62,5 +41,4 @@ if ($res = mysqli_query($conn, $sql)) {
                                  .mysqli_error($link); 
  } 
  mysqli_close($link); 
-
 ?>
