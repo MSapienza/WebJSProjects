@@ -68,6 +68,20 @@ form
   margin: 0;
 }
 
+.chordButtons
+{
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: #fefad5;
+}
+
+.chordButtons table
+{
+    width: 100%;
+}
+
 .dropdown 
 {
   position: relative;

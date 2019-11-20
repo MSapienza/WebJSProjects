@@ -3,7 +3,8 @@
 	
 	<head> 
 	    <title>Tax Bracket UI</title> 
-	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="taxCalculations.js"> </script>
         <link href="taxStyle.css" rel="stylesheet" type="text/css">
     </head>
     
@@ -24,7 +25,28 @@
         </div>
         
         <div class = "myBody">
-               <br><br><br><br>
+                <br><br><br><br>
+                <br><br>
+            <div class = "chordButtons">
+            <form>
+                <table>
+                    <tr>
+                        <th>What Bracket Would You Like to View?</th>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <select id = "bracket">
+                                <option value = "MO" > Missouri Bracket</option> 
+                                <option value = "Custom" > User-Submitted Bracket </option> 
+                                <option value = "Federal"> Federal Bracket</option>
+                            </select>
+                            <input type = "button" onclick = "viewTaxBracket()" value = "Submit"/>
+                            <p id = "bracketResult" style = "font-size: 20pt"></p>
+                        </td>
+                    </tr>	
+                </table>
+            </form>
+        </div>
         </div>
     </body>
 </html>
