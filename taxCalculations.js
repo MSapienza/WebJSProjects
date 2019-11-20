@@ -32,3 +32,5 @@ function viewTaxBracket(brackets)
      xhttp.open("GET", "taxBracketGET.php?q="+brackets, true);
      xhttp.send();
 }
+
+//php -S 127.0.0.1:8080 starts the PHP server in terminal
