@@ -28,24 +28,18 @@
                 <br><br><br><br>
                 <br><br>
             <div class = "chordButtons">
-            <form>
-                <table>
-                    <tr>
-                        <th>What Bracket Would You Like to View?</th>
-                    </tr>
-                    <tr>
-                        <td> 
-                            <select id = "bracket">
-                                <option value = "MO" > Missouri Bracket</option> 
-                                <option value = "Custom" > User-Submitted Bracket </option> 
-                                <option value = "Federal"> Federal Bracket</option>
-                            </select>
-                            <input type = "button" onclick = "viewTaxBracket()" value = "Submit"/>
-                            <p id = "bracketResult" style = "font-size: 20pt"></p>
-                        </td>
-                    </tr>	
-                </table>
+            <form action = "">
+                <h2>What Bracket Would You Like to View?</h2>
+                <select name = "taxBrackets" onchange = "viewTaxBracket(this.value)">
+                    <option value = "">Select A Bracket</option>
+                    <option value = "MO" > Missouri Bracket</option> 
+                    <option value = "Custom" > User-Submitted Bracket </option> 
+                    <option value = "Federal"> Federal Bracket</option>
+                </select>
             </form>
+            <br><br><br>
+            <div id="txtHint">Bracket info will be displayed upon user selection.</div>
+            <br><br>
         </div>
         </div>
     </body>
