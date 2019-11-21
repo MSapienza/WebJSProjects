@@ -3,7 +3,8 @@
 	
 	<head> 
 	    <title>Tax Bracket UI</title> 
-	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="taxCalculations.js"> </script>
         <link href="taxStyle.css" rel="stylesheet" type="text/css">
     </head>
     
@@ -22,9 +23,33 @@
             &nbsp; &nbsp; &nbsp; <a href="taxViewAllBrackets.html">View Tax Brackets</a>
             &nbsp; &nbsp; &nbsp; <a href="taxCalculateMyTaxes.html">Calculate Taxes on Salary</a>
         </div>
-        
-        <div class = "myBody">
-          <br><br><br><br>
-        </div>
     </body>
+        <div class = "myBody">
+            <br><br><br><br>
+            <br><br>
+        <div class = "chordButtons">
+        <form action = "">
+            <h1>Create Custom Tax Bracket</h1><br>
+            <h2>Note: There cannot be any blanks in rows that have been added.</h2>
+            <br>
+            <table id = "myTable">
+                <tr>
+                <th >Starting Salary (XX.XX Dollars and Cents)</th>
+                <th >Ending Salary (XX.XX Dollars and Cents)</th>
+                <th >Tax Rate (XX.XX Percentage)</th>
+                <th >Additional Tax (XX.XX Dollar and Cents)</th>
+                </tr>
+            </table>
+            <br><br>
+            <input type = "button" onclick = "addNewRow()" value = "Add Another Row"/>
+            <input type = "button" onclick = "removeBottomRow()" value = "Remove Bottom Row"/>
+            <br><br>
+            <input type = "button" onclick = "setTaxBracketInfo()" value = "Submit"/>
+            <input type = "button" onclick = "location.reload()" value = "Reset"/>
+        </form>
+        <br><br>
+        <div id="txtHint"></div>
+        <br><br>
+    </div>
+    </div>
 </html>
