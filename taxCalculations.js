@@ -31,8 +31,8 @@ function taxBracketCalculator(salary, bracket)
 }
 
 function setTaxBracketInfo()
-{    //user submits new Tax Bracket linked to fictional state
-
+{    
+     //user submits new Tax Bracket linked to fictional state
      //the first portion grabs the dynamic table and stores all values into an Array
      var myTable = document.getElementById("myTable");
      var rowValues = [];
@@ -44,21 +44,24 @@ function setTaxBracketInfo()
                var element = myTable.rows[row].cells[cell];
                if (element.childNodes[0].getAttribute('type') == 'text')
                {
-                    rowValues.push("'" + element.childNodes[0].value + "'");
+                    rowValues.push(element.childNodes[0].value); 
                }
           }
      }
-     
-     JSON.stringify(rowValues);
 
      //this portion will call a PHP file to insert those values and return a message to the user
      var xhttp = new XMLHttpRequest();
 
-     xhttp.open("POST", "taxBracketSET.php?q="+rowValues, true);
+     xhttp.open("GET", "taxBracketSET.php?q=" + rowValues, true);
      xhttp.send();
 
-     // document.getElementById("txtHint").innerHTML = "Successfully inserted data!";
-     document.getElementById("txtHint").innerHTML = this.responseText;
+     xhttp.onreadystatechange = function() 
+     {
+          if (this.readyState == 4 && this.status == 200)
+          {
+               document.getElementById("txtHint").innerHTML = this.responseText;
+          }
+     };
 }
 
 function viewTaxBracket(brackets)
@@ -90,3 +93,4 @@ function viewTaxBracket(brackets)
 }
 
 //php -S 127.0.0.1:8080 starts the PHP server in terminal
+//document root must be /Users/matthewsapienza/Desktop/Coding/GitHub Pulls for above to work!
